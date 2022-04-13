@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <Grid container justifyContent="center" sx={{ mt: 10, mb: 10 }}>
       <Grid item xs={10} sm={10} md={4.5} lg={4.5} xl={4.5} sx={{ mb: 10 }}>
-        <Typography variant="h2" component="h1" sx={{ fontWeight: 700 }}>
+        <Typography variant="h3" component="h1" sx={{ fontWeight: 700 }}>
           Fractionalized Real Estate Investing For Everyone
         </Typography>
         <Typography variant="subtitle1" component="div">
