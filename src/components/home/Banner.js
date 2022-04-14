@@ -1,16 +1,29 @@
-import { Button, Card, Grid, Typography } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
+import { useState } from 'react';
+import { Card, Grid, Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Banner = () => {
+  const [email, setEmail] = useState('');
+  const [disable, setDisable] = useState(false);
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    if (e.target.value) {
+      setDisable(true);
+    }
+  };
+
   return (
     <Grid container justifyContent="center" sx={{ mt: 15, mb: 15 }}>
       <Grid item xs={10} sm={10} md={4} lg={4} xl={4} sx={{ mb: 10 }}>
         <Typography variant="h2" component="h1" sx={{ fontWeight: 700 }}>
           Fractionalized Real Estate Investing For Everyone
         </Typography>
-        <Typography variant="subtitle1" component="div"
-        sx={{ fontSize: '18px', mt: 4 }}>
+        <Typography
+          variant="subtitle1"
+          component="div"
+          sx={{ fontSize: '18px', mt: 4 }}
+        >
           Buy & own single family homes easily and securely
         </Typography>
         <Typography variant="subtitle1" component="div">
@@ -27,20 +40,6 @@ const Banner = () => {
         </Typography>
       </Grid>
       <Grid xs={10} sm={10} md={4} item lg={4} xl={3} sx={{ mb: 10 }}>
-        {/* <Typography
-          sx={{
-            backgroundColor: '#000',
-            width: 100,
-            height: 90,
-            borderRadius: 5,
-
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <HomeIcon sx={{ color: '#fff', fontSize: 50 }} />
-        </Typography> */}
         <Card
           sx={{
             border: 'none',
@@ -49,35 +48,51 @@ const Banner = () => {
             py: 5,
           }}
         >
-          <img style={{width:'20%',
-              marginLeft: '40%', marginTop:'-35rem', display:'none'}} src="android-chrome-192x192.png" alt="Logo" role="img" class="rounded object-cover h-full w-full"></img>
+          <img
+            style={{
+              width: '20%',
+              marginLeft: '40%',
+              marginTop: '-35rem',
+              display: 'none',
+            }}
+            src="android-chrome-192x192.png"
+            alt="Logo"
+            role="img"
+            className="rounded object-cover h-full w-full"
+          />
           <Typography
             variant="h4"
             component="h1"
             sx={{ fontWeight: 600, textAlign: 'center', mt: 3 }}
           >
-          Join our community
-        </Typography>
+            Join our community
+          </Typography>
           <Typography
             variant="subtitle1"
             component="div"
             sx={{ textAlign: 'center', mt: 1 }}
           >
-          And get updates as we get closer to launch
+            And get updates as we get closer to launch
           </Typography>
 
-          <a style={{color:'white', textDecoration:'none'}} href='https://homes.us14.list-manage.com/subscribe/post?u=ed1187605312b15b300466b6d&amp;id=617d91117e'> <Button
-            variant="contained"
-            sx={{
-              width: '70%',
-              marginLeft: '15%',
-              mt: 3,
-              height: 50,
-              backgroundColor: '#4f46e5',
-            }}
-          >
-         Signup
-          </Button></a>
+          <Typography sx={{ textAlign: 'center', mt: 2 }}>
+            <input
+              placeholder="Enter Your Email"
+              className="input"
+              value={email}
+              onChange={handleEmail}
+            />
+            <a
+              style={{ color: 'white', textDecoration: 'none' }}
+              href={
+                email
+                  ? 'https://homes.us14.list-manage.com/subscribe/post?u=ed1187605312b15b300466b6d&amp;id=617d91117e'
+                  : null
+              }
+            >
+              <button>Submit</button>
+            </a>
+          </Typography>
         </Card>
       </Grid>
     </Grid>

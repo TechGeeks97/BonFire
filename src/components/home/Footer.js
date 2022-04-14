@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { createTheme } from '@mui/system';
 
@@ -68,11 +67,14 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <>
-      
-      <hr style={{height:'1px' , backgroundColor: '#837575', border:'none'}}/>
+      <hr
+        style={{ height: '1px', backgroundColor: '#837575', border: 'none' }}
+      />
       <div className={classes.secondFooter}>
         <div>Copyright &copy; 2022 Bonfire</div>
-        <hr style={{height:'1px' , backgroundColor: '#837575', border:'none'}}/>
+        <hr
+          style={{ height: '1px', backgroundColor: '#837575', border: 'none' }}
+        />
       </div>
     </>
   );
