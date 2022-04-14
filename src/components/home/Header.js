@@ -20,6 +20,10 @@ const useStyles = makeStyles(() => ({
   logo: {
     fontSize: 30,
     fontWeight: 900,
+    height: '46px'
+  },
+  logoimg: {
+    height: '46px'
   },
   list: {
     fontSize: 18,
@@ -45,17 +49,14 @@ const Header = () => {
   return (
     <Grid container justifyContent="space-around" sx={{ py: 2 }}>
       <Grid item>
-        <div className={classes.logo}>LOGO</div>
+        <div className={classes.logo}><img className={classes.logoimg} src="android-chrome-192x192.png"></img></div>
       </Grid>
       <Grid item>
         <div className={classes.middle}>
-          <span className={classes.list}>Foundations</span>
-          &nbsp;&nbsp;
-          <span className={classes.list}>Team</span>
+
         </div>
       </Grid>
       <Grid item>
-        <div className={classes.btn}>SURF & TURF</div>
       </Grid>
     </Grid>
   );

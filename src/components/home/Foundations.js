@@ -33,6 +33,7 @@ const Foundations = () => {
   const classes = useStyles();
   return (
     <>
+      <hr style={{height:'1px' , backgroundColor: '#837575', border:'none'}}/>
       <Grid
         container
         justifyContent="center"
@@ -52,22 +53,21 @@ const Foundations = () => {
               mb: 4,
             }}
           >
-            Web 3.0 for real estate investing
           </Typography>
           <Typography variant="h2" component="h1" className={classes.heading}>
-            New foundations for real estate finance
+          Web 3.0 for real estate investing
           </Typography>
           <Typography
             variant="subtitle1"
             component="div"
-            sx={{ fontSize: 20, textAlign: 'center', mt: 2 }}
+            sx={{ fontSize: 20, width:'80%', marginLeft: '10%', textAlign: 'center', mt: 4 }}
           >
             Bonfire is a platform that will facilitate the decentralized real
             estate transactions in a seamless, permissionless, easy, and liquid
             manner
           </Typography>
         </Grid>
-        <Grid item xs={8} sm={8} md={3} lg={2.5}>
+        <Grid item xs={8} sm={8} md={3} lg={2.2}>
           <Typography
             variant="h5"
             component="h1"
@@ -76,10 +76,10 @@ const Foundations = () => {
             Ease
           </Typography>
           <Typography sx={{ textAlign: 'center', fontSize: 18 }}>
-            Transforming transactions that used to take 30 days into 30 seconds
+          Transforming transactions that used to take 30 days into 30 seconds
           </Typography>
         </Grid>
-        <Grid item xs={8} sm={8} md={3} lg={2.5}>
+        <Grid item xs={8} sm={8} md={3} lg={2.2}>
           <Typography
             variant="h5"
             component="h1"
@@ -88,32 +88,19 @@ const Foundations = () => {
             Liquidity
           </Typography>
           <Typography sx={{ textAlign: 'left', fontSize: 18 }}>
-            A global network of buyers and sellers
+          The blockchain never sleeps and can facilitate decentralized transactions 24/7/365
           </Typography>
         </Grid>
-        <Grid item xs={8} sm={8} md={3} lg={2.5}>
+        <Grid item xs={8} sm={8} md={3} lg={2.2}>
           <Typography
             variant="h5"
             component="h1"
             sx={{ textAlign: 'center', mb: 3, fontWeight: 700 }}
           >
-            Control
+            Quality
           </Typography>
           <Typography sx={{ textAlign: 'left', fontSize: 18 }}>
-            Access to top properties# in the markets with highest potential
-          </Typography>
-        </Grid>
-        <Grid item xs={8} sm={8} md={3} lg={2.5}>
-          <Typography
-            variant="h5"
-            component="h1"
-            sx={{ textAlign: 'center', mb: 3, fontWeight: 700 }}
-          >
-            Availability
-          </Typography>
-          <Typography sx={{ textAlign: 'left', fontSize: 18 }}>
-            The blockchain never sleeps and can facilitate decentralized
-            transactions 24/7/365
+          Access to top properties<sup>#</sup> in the markets with highest potential<sup>*</sup>
           </Typography>
         </Grid>
       </Grid>
@@ -121,14 +108,28 @@ const Foundations = () => {
         sx={{
           textAlign: 'center',
           fontSize: 14,
-          mt: 2,
-          mb: 10,
+          mt: 12,
+          mb: 0,
           display: 'flex',
           justifyContent: 'center',
         }}
       >
-        AI driven models crunching 1000+ data points to predict annualized
-        returns # Selection based on neighborhood, schools, parks, and community
+       <sup>*</sup>AI driven models crunching 1000+ data points to predict annualized
+        returns
+        </Typography>
+
+        <Typography
+        sx={{
+          textAlign: 'center',
+          fontSize: 14,
+          mt: 0,
+          mb: 20,
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+
+        <sup>#</sup> Selection based on neighborhood, schools, parks, and community
       </Typography>
     </>
   );

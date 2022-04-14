@@ -68,41 +68,11 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.main}>
-        <div className={classes.singleItem}>
-          <div className={classes.heading}>About</div>
-          <ul className={classes.ul}>
-            <li className={classes.li}>Deck</li>
-            <li className={classes.li}>LightPaper</li>
-          </ul>
-        </div>
-        <div className={classes.singleItem}>
-          <div className={classes.heading}>Community</div>
-          <ul className={classes.ul}>
-            <li className={classes.li}>Twitter</li>
-            <li className={classes.li}>Discord</li>
-          </ul>
-        </div>
-        <div className={classes.singleItem}>
-          <div className={classes.heading}>Govarnance</div>
-          <ul className={classes.ul}>
-            <li className={classes.li}>Voting Portal</li>
-          </ul>
-        </div>
-        <div className={classes.singleItem}>
-          <div className={classes.heading}>Newsletter</div>
-          <div>
-            <input placeholder="user@site.com" className={classes.input} />
-            &nbsp;
-            <button className={classes.btn}>Submit</button>
-          </div>
-        </div>
-      </div>
-      <hr />
+      
+      <hr style={{height:'1px' , backgroundColor: '#837575', border:'none'}}/>
       <div className={classes.secondFooter}>
-        <div>Copyright &copy; 2022 company</div>
-        <hr />
-        <div>Trademark Policy</div>
+        <div>Copyright &copy; 2022 Bonfire</div>
+        <hr style={{height:'1px' , backgroundColor: '#837575', border:'none'}}/>
       </div>
     </>
   );

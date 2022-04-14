@@ -9,6 +9,7 @@ const App = () => {
   return (
     <>
       <Header />
+    
       <Banner />
       <Foundations />
       {/* <Team /> */}
