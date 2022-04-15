@@ -38,7 +38,7 @@ const Foundations = () => {
         container
         justifyContent="center"
         spacing={3}
-        sx={{ mt: 10, mb: 5 }}
+        sx={{ mt: 10, mb: 30 }}
       >
         <Grid item lg={10} sx={{ mb: 10 }}>
           <Typography
@@ -60,11 +60,10 @@ const Foundations = () => {
           <Typography
             variant="subtitle1"
             component="div"
-            sx={{ fontSize: 20, width:'80%', marginLeft: '10%', textAlign: 'center', mt: 4 }}
+            sx={{ fontSize: 26, width:'80%', marginLeft: '10%', textAlign: 'center', mt: 4 }}
           >
-            Bonfire is a platform that will facilitate the decentralized real
-            estate transactions in a seamless, permissionless, easy, and liquid
-            manner
+            Bonfire facilitates real estate transactions in a seamless, permissionless, and secure way
+
           </Typography>
         </Grid>
         <Grid item xs={8} sm={8} md={3} lg={2.2}>
@@ -87,7 +86,7 @@ const Foundations = () => {
           >
             Liquidity
           </Typography>
-          <Typography sx={{ textAlign: 'left', fontSize: 18 }}>
+          <Typography sx={{ textAlign: 'center', fontSize: 18 }}>
           The blockchain never sleeps and can facilitate decentralized transactions 24/7/365
           </Typography>
         </Grid>
@@ -97,40 +96,14 @@ const Foundations = () => {
             component="h1"
             sx={{ textAlign: 'center', mb: 3, fontWeight: 700 }}
           >
-            Quality
+            Security
           </Typography>
-          <Typography sx={{ textAlign: 'left', fontSize: 18 }}>
-          Access to top properties<sup>#</sup> in the markets with highest potential<sup>*</sup>
+          <Typography sx={{ textAlign: 'center', fontSize: 18 }}>
+          Our technology is immutable and your investment is always protected and secure 
           </Typography>
         </Grid>
       </Grid>
-      <Typography
-        sx={{
-          textAlign: 'center',
-          fontSize: 14,
-          mt: 12,
-          mb: 0,
-          display: 'flex',
-          justifyContent: 'center',
-        }}
-      >
-       <sup>*</sup>AI driven models crunching 1000+ data points to predict annualized
-        returns
-        </Typography>
-
-        <Typography
-        sx={{
-          textAlign: 'center',
-          fontSize: 14,
-          mt: 0,
-          mb: 20,
-          display: 'flex',
-          justifyContent: 'center',
-        }}
-      >
-
-        <sup>#</sup> Selection based on neighborhood, schools, parks, and community
-      </Typography>
+     
     </>
   );
 };

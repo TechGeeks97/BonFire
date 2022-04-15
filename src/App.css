@@ -7,11 +7,13 @@ body {
   background-color: #ebebeb;
 }
 .input {
-  height: 50px;
+  height: 48px;
   width: 60%;
   border: 1px solid #d6d6d6;
   padding-left: 5px;
   font-size: 14px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 button {
@@ -21,4 +23,6 @@ button {
   background-color: #000;
   color: #fff;
   cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

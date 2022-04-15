@@ -14,9 +14,9 @@ const Banner = () => {
   };
 
   return (
-    <Grid container justifyContent="center" sx={{ mt: 15, mb: 15 }}>
+    <Grid container justifyContent="center" sx={{ mt: 10, mb: 15 }}>
       <Grid item xs={10} sm={10} md={4} lg={4} xl={4} sx={{ mb: 10 }}>
-        <Typography variant="h2" component="h1" sx={{ fontWeight: 700 }}>
+        <Typography variant="h2" component="h1" sx={{ fontWeight: 700, justifyContent:'center' }}>
           Fractionalized Real Estate Investing For Everyone
         </Typography>
         <Typography
@@ -90,7 +90,7 @@ const Banner = () => {
                   : null
               }
             >
-              <button>Submit</button>
+              <button>Subscribe</button>
             </a>
           </Typography>
         </Card>

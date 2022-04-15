@@ -6,17 +6,18 @@ const useStyles = makeStyles(() => ({
   logo: {
     fontSize: 30,
     fontWeight: 900,
-    height: '46px',
+    justifyContent: 'center'
   },
   logoimg: {
-    height: '46px',
+    alignContent: 'center',
+    height:'100px'
   },
 }));
 
 const Header = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="space-around" sx={{ py: 2 }}>
+    <Grid container justifyContent="space-around" sx={{ py: 2, justifyContent:'center' }}>
       <Grid item>
         <div className={classes.logo}>
           <img
