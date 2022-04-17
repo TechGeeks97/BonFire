@@ -15,8 +15,12 @@ const Banner = () => {
 
   return (
     <Grid container justifyContent="center" sx={{ mt: 10, mb: 15 }}>
-      <Grid item xs={10} sm={10} md={4} lg={4} xl={4} sx={{ mb: 10 }}>
-        <Typography variant="h2" component="h1" sx={{ fontWeight: 700, justifyContent:'center' }}>
+      <Grid item xs={8} sm={8} md={6} lg={5} xl={4} sx={{ mb: 10 }}>
+        <Typography
+          variant="h3"
+          component="h1"
+          sx={{ fontWeight: 700, justifyContent: 'center' }}
+        >
           Fractionalized Real Estate Investing For Everyone
         </Typography>
         <Typography
@@ -39,7 +43,7 @@ const Banner = () => {
           </Typography>
         </Typography>
       </Grid>
-      <Grid xs={10} sm={10} md={4} item lg={4} xl={3} sx={{ mb: 10 }}>
+      <Grid item xs={10} sm={6} md={5} lg={4} xl={3} sx={{ mb: 10 }}>
         <Card
           sx={{
             border: 'none',
@@ -63,7 +67,7 @@ const Banner = () => {
           <Typography
             variant="h4"
             component="h1"
-            sx={{ fontWeight: 600, textAlign: 'center', mt: 3 }}
+            sx={{ fontWeight: 600, textAlign: 'center', m: 2 }}
           >
             Join our community
           </Typography>
