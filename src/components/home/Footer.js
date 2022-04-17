@@ -57,8 +57,7 @@ const useStyles = makeStyles(() => ({
   },
   secondFooter: {
     padding: 20,
-    display: 'flex',
-    justifyContent: 'space-around',
+    textAlign: 'center',
     color: '#666666',
   },
 }));
@@ -72,9 +71,6 @@ const Footer = () => {
       />
       <div className={classes.secondFooter}>
         <div>Copyright &copy; 2022 Bonfire</div>
-        <hr
-          style={{ height: '1px', backgroundColor: '#837575', border: 'none' }}
-        />
       </div>
     </>
   );

@@ -15,14 +15,10 @@ const Banner = () => {
 
   return (
     <Grid container justifyContent="center" sx={{ mt: 10, mb: 15 }}>
-      <Grid item xs={8} sm={8} md={6} lg={5} xl={4} sx={{ mb: 10 }}>
-        <Typography
-          variant="h3"
-          component="h1"
-          sx={{ fontWeight: 700, justifyContent: 'center' }}
-        >
+      <Grid item xs={10} sm={8} md={6} lg={5} xl={4} sx={{ mb: 10 }}>
+        <h1 className="main-heading text-center">
           Fractionalized Real Estate Investing For Everyone
-        </Typography>
+        </h1>
         <Typography
           variant="subtitle1"
           component="div"
@@ -31,19 +27,19 @@ const Banner = () => {
           Buy & own single family homes easily and securely
         </Typography>
         <Typography variant="subtitle1" component="div">
-          <Typography sx={{ display: 'flex', alignItems: 'center', mt: 3 }}>
+          <Typography sx={{ display: 'flex', mt: 3 }}>
             <CheckCircleIcon /> &nbsp;&nbsp; Each house is owned as a NFT
           </Typography>
-          <Typography sx={{ display: 'flex', alignItems: 'center', mt: 3 }}>
+          <Typography sx={{ display: 'flex', mt: 3 }}>
             <CheckCircleIcon /> &nbsp;&nbsp; Managed by DAO LLC
           </Typography>
-          <Typography sx={{ display: 'flex', alignItems: 'center', mt: 3 }}>
+          <Typography sx={{ display: 'flex', mt: 3 }}>
             <CheckCircleIcon /> &nbsp;&nbsp; Early adopters receive significant
             Bonfire governance tokens
           </Typography>
         </Typography>
       </Grid>
-      <Grid item xs={10} sm={6} md={5} lg={4} xl={3} sx={{ mb: 10 }}>
+      <Grid item xs={11} sm={6} md={5} lg={4} xl={3} sx={{ mb: 10 }}>
         <Card
           sx={{
             border: 'none',
@@ -74,7 +70,7 @@ const Banner = () => {
           <Typography
             variant="subtitle1"
             component="div"
-            sx={{ textAlign: 'center', mt: 1 }}
+            sx={{ textAlign: 'center', m: 1 }}
           >
             And get updates as we get closer to launch
           </Typography>

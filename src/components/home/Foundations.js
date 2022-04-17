@@ -33,7 +33,9 @@ const Foundations = () => {
   const classes = useStyles();
   return (
     <>
-      <hr style={{height:'1px' , backgroundColor: '#837575', border:'none'}}/>
+      <hr
+        style={{ height: '1px', backgroundColor: '#837575', border: 'none' }}
+      />
       <Grid
         container
         justifyContent="center"
@@ -41,29 +43,25 @@ const Foundations = () => {
         sx={{ mt: 10, mb: 30 }}
       >
         <Grid item lg={10} sx={{ mb: 10 }}>
-          <Typography
-            sx={{
-              backgroundColor: '#000',
-              px: 2,
-              borderRadius: 10,
-              color: '#fff',
-              width: 'fit-content',
-              margin: 'auto',
-              mt: 2,
-              mb: 4,
-            }}
+          <h1
+            className="main-heading text-center"
+            style={{ textAlign: 'center' }}
           >
-          </Typography>
-          <Typography variant="h2" component="h1" className={classes.heading}>
-          Web 3.0 for real estate investing
-          </Typography>
+            Web 3.0 for real estate investing
+          </h1>
           <Typography
             variant="subtitle1"
             component="div"
-            sx={{ fontSize: 26, width:'80%', marginLeft: '10%', textAlign: 'center', mt: 4 }}
+            sx={{
+              fontSize: 22,
+              width: '80%',
+              marginLeft: '10%',
+              textAlign: 'center',
+              mt: 4,
+            }}
           >
-            Bonfire facilitates real estate transactions in a seamless, permissionless, and secure way
-
+            Bonfire facilitates real estate transactions in a seamless,
+            permissionless, and secure way
           </Typography>
         </Grid>
         <Grid item xs={8} sm={8} md={3} lg={2.2}>
@@ -74,8 +72,8 @@ const Foundations = () => {
           >
             Ease
           </Typography>
-          <Typography sx={{ textAlign: 'center', fontSize: 18 }}>
-          Transforming transactions that used to take 30 days into 30 seconds
+          <Typography sx={{ textAlign: 'center', fontSize: 18, mb: 3 }}>
+            Transforming transactions that used to take 30 days into 30 seconds
           </Typography>
         </Grid>
         <Grid item xs={8} sm={8} md={3} lg={2.2}>
@@ -86,8 +84,9 @@ const Foundations = () => {
           >
             Liquidity
           </Typography>
-          <Typography sx={{ textAlign: 'center', fontSize: 18 }}>
-          The blockchain never sleeps and can facilitate decentralized transactions 24/7/365
+          <Typography sx={{ textAlign: 'center', fontSize: 18, mb: 3 }}>
+            The blockchain never sleeps and can facilitate decentralized
+            transactions 24/7/365
           </Typography>
         </Grid>
         <Grid item xs={8} sm={8} md={3} lg={2.2}>
@@ -99,11 +98,11 @@ const Foundations = () => {
             Security
           </Typography>
           <Typography sx={{ textAlign: 'center', fontSize: 18 }}>
-          Our technology is immutable and your investment is always protected and secure 
+            Our technology is immutable and your investment is always protected
+            and secure
           </Typography>
         </Grid>
       </Grid>
-     
     </>
   );
 };
